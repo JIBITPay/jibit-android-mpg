@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_micro"
+            android:layout_marginTop="@dimen/spacing_micro"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="0dp"
+            app:contentPaddingBottom="@dimen/spacing_normal"
+            app:contentPaddingLeft="@dimen/activity_horizontal_margin"
+            app:contentPaddingRight="@dimen/activity_horizontal_margin"
+            app:contentPaddingTop="@dimen/spacing_normal"
+            app:elevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvMerchantCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/merchant_code"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                <EditText
+                    android:id="@+id/etMerchantCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_micro"
+                    android:background="@drawable/search_background"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:padding="@dimen/spacing_normal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                <TextView
+                    android:id="@+id/tvMerchantName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/merchant_name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                <EditText
+                    android:id="@+id/etMerchantName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_micro"
+                    android:background="@drawable/search_background"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:padding="@dimen/spacing_normal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                <TextView
+                    android:id="@+id/tvProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/product_name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                <EditText
+                    android:id="@+id/etProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_micro"
+                    android:background="@drawable/search_background"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="@dimen/spacing_normal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                <TextView
+                    android:id="@+id/tvProductDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/product_desc"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                <EditText
+                    android:id="@+id/etProductDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_micro"
+                    android:background="@drawable/search_background"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="@dimen/spacing_normal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                <TextView
+                    android:id="@+id/tvCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/count"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                <EditText
+                    android:id="@+id/etCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_micro"
+                    android:background="@drawable/search_background"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:padding="@dimen/spacing_normal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                <TextView
+                    android:id="@+id/tvTotalPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/total_price"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_background"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvTomans"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/spacing_micro"
+                        android:layout_marginStart="@dimen/spacing_normal"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="@string/tomans"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <EditText
+                        android:id="@+id/etTotalPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_micro"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="13"
+                        android:minHeight="32dp"
+                        android:padding="@dimen/spacing_normal"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+                </LinearLayout>
+
+                <!--<EditText-->
+                    <!--android:id="@+id/etTotalPrice"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/spacing_micro"-->
+                    <!--android:background="@drawable/search_background"-->
+                    <!--android:gravity="center"-->
+                    <!--android:imeOptions="actionNext"-->
+                    <!--android:inputType="phone"-->
+                    <!--android:padding="@dimen/spacing_normal"-->
+                    <!--android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />-->
+
+                <TextView
+                    android:id="@+id/tvCallbackUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/callbacl_url"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                <EditText
+                    android:id="@+id/etCallbackUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_micro"
+                    android:background="@drawable/search_background"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:padding="@dimen/spacing_normal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                <TextView
+                    android:id="@+id/tvBizOrderId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/order_id"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                <EditText
+                    android:id="@+id/etBizOrderId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_micro"
+                    android:background="@drawable/search_background"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="@dimen/spacing_normal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                <Button
+                    android:id="@+id/btnBuy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_normal"
+                    android:text="@string/buy"
+                    android:theme="@style/ColoredButton" />
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<Spinner-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center_vertical" />-->
+
+                <!--<EditText-->
+                <!--android:id="@+id/etAccountNumber"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/spacing_micro"-->
+                <!--android:layout_weight="2"-->
+                <!--android:background="@drawable/search_background"-->
+                <!--android:gravity="right|center_vertical"-->
+                <!--android:imeOptions="actionNext"-->
+                <!--android:inputType="phone"-->
+                <!--android:padding="@dimen/spacing_normal"-->
+                <!--android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />-->
+                <!--</LinearLayout>-->
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
+
+</LinearLayout>

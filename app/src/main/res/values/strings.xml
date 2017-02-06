@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">پرداخت با جیبیت</string>
+    <string name="merchant_code">کد فروشنده</string>
+    <string name="buy">خرید</string>
+    <string name="merchant_name">نام فروشنده</string>
+    <string name="product_name">نام محصول</string>
+    <string name="product_desc">توضیحات محصول</string>
+    <string name="count">تعداد</string>
+    <string name="total_price">قیمت مجموع</string>
+    <string name="callbacl_url">آدرس بازخوانی</string>
+    <string name="insert_merchant_name_is_necessary">وارد کردن نام مرچنت الزامیست</string>
+    <string name="insert_merchant_code_is_necessary">وارد کردن کد مرچنت الزامیست</string>
+    <string name="receipt">رسید پرداخت</string>
+    <string name="tracking_code">شماره تراکنش</string>
+    <string name="amount">مبلغ</string>
+    <string name="tomans">تومان</string>
+    <string name="successful_transaction">تراکنش موفق</string>
+    <string name="unsuccessful_transaction">تراکنش ناموفق</string>
+    <string name="some_error_happened">بروز خطا</string>
+    <string name="invalid_transaction">تراکنش نامعتبر</string>
+    <string name="insert_callback_is_necessary">وارد نمودن آدرس بازخوانی ضروری است</string>
+    <string name="rials">ریال</string>
+    <string name="order_id">کد سفارش</string>
+</resources>
